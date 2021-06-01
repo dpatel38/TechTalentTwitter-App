@@ -1,4 +1,4 @@
-package com.tts.My.Twitter.App.configuration;
+package com.tts.TechTalent.Twitter.App.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

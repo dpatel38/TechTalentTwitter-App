@@ -1,9 +1,9 @@
-package com.tts.My.Twitter.App.service;
+package com.tts.TechTalent.Twitter.App.service;
 
-import com.tts.My.Twitter.App.model.Role;
-import com.tts.My.Twitter.App.model.User;
-import com.tts.My.Twitter.App.repository.RoleRepository;
-import com.tts.My.Twitter.App.repository.UserRepository;
+import com.tts.TechTalent.Twitter.App.model.Role;
+import com.tts.TechTalent.Twitter.App.model.User;
+import com.tts.TechTalent.Twitter.App.repository.RoleRepository;
+import com.tts.TechTalent.Twitter.App.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

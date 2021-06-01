@@ -1,4 +1,4 @@
-package com.tts.My.Twitter.App.model;
+package com.tts.TechTalent.Twitter.App.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +12,6 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.util.Date;
-import java.util.List;
 
 @Data
 @Builder

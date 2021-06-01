@@ -1,4 +1,4 @@
-package com.tts.My.Twitter.App;
+package com.tts.TechTalent.Twitter.App;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

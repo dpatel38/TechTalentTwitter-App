@@ -1,8 +1,8 @@
-package com.tts.My.Twitter.App.service;
+package com.tts.TechTalent.Twitter.App.service;
 
-import com.tts.My.Twitter.App.model.Tweet;
-import com.tts.My.Twitter.App.model.User;
-import com.tts.My.Twitter.App.repository.TweetRepository;
+import com.tts.TechTalent.Twitter.App.model.Tweet;
+import com.tts.TechTalent.Twitter.App.model.User;
+import com.tts.TechTalent.Twitter.App.repository.TweetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

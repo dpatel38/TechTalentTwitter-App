@@ -1,7 +1,7 @@
-package com.tts.My.Twitter.App.repository;
+package com.tts.TechTalent.Twitter.App.repository;
 
-import com.tts.My.Twitter.App.model.Tweet;
-import com.tts.My.Twitter.App.model.User;
+import com.tts.TechTalent.Twitter.App.model.Tweet;
+import com.tts.TechTalent.Twitter.App.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

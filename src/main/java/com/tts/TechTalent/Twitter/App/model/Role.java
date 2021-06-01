@@ -1,4 +1,4 @@
-package com.tts.My.Twitter.App.model;
+package com.tts.TechTalent.Twitter.App.model;
 
 
 import lombok.AllArgsConstructor;
