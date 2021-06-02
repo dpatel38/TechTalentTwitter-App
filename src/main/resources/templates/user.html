@@ -3,6 +3,7 @@
 
 <head>
   <title>User Profile</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
   <link rel="stylesheet" href="/custom.css">
@@ -37,6 +38,12 @@
       <p class="mb-1" th:utext="${tweet.message}"></p>
     </div>
   </div>
+  <form th:action="@{/follow/} + ${user.username}" th:if="${!following}" method="post">
+    <button style="float:right" type="Submit" class="btn btn-lg btn-success">Follow</button>
+  </form>
+  <form th:action="@{/unfollow/} + ${user.username}" th:if="${following}" method="post">
+    <button style="float:right" type="Submit" class="btn btn-lg btn-primary unfollow_btn">Following</button>
+  </form>
 </div>
 </body>
 </html>
