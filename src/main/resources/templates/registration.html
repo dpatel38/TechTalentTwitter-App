@@ -6,10 +6,12 @@
   <div th:replace="/fragments/headlinks" ></div>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
   <div th:replace="fragments/navbar"></div>
-  <h2>Sign up</h2>
-  <form  th:action="@{/signup}" th:object="${user}" method="post" autocomplete="off" >
+  <div class="container">
+
+  <form th:unless="${success}" th:action="@{/signup}" th:object="${user}" method="post" autocomplete="off" >
+    <h2>Sign up</h2>
     <div class="form-group">
       <label th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="validation-message"></label>
       <input type="text" th:field="*{firstName}" placeholder="First Name" class="form-control"/>
@@ -35,10 +37,16 @@
     </div>
   </form>
 
+<!--  <div th:if="${success}" class="container">-->
+<!--    <h3><span class="text-success" th:utext="${success}"></span></h3>-->
+<!--  </div>-->
   <div th:if="${success}" class="container">
     <h3><span class="text-success" th:utext="${success}"></span></h3>
+    <form th:action="@{~/login}" method="get">
+      <button class="btn btn-md btn-primary twitter-btn m-3" type="Submit" >Log In</button>
+    </form>
   </div>
-
+  </div>
 </div>
 </body>
 </html>

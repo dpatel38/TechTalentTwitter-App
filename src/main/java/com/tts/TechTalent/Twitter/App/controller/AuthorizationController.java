@@ -21,6 +21,7 @@ public class AuthorizationController {
         return "login";
     }
 
+
     @GetMapping(value="/signup")
     public String registration(Model model){
         User user = new User();
